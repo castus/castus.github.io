@@ -1,8 +1,6 @@
 ---
-layout: home
+title: I build iOS applications
 ---
-
-# I build iOS applications
 
 ## I'm a iOS developer.
 
