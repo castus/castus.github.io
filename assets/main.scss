@@ -71,10 +71,10 @@ $on-laptop:        800px;
     padding: 50px;
     background-color: #A1C3BD;
     color: #fff;
-}
-
-.site-header-title {
-    
+    background: #fdc46e;
+    background: -moz-linear-gradient(-45deg, #264b9f 0%, #082031 100%);
+    background: -webkit-linear-gradient(-45deg,  #264b9f 0%,#082031 100%);
+    background: linear-gradient(135deg, #264b9f 0%, #082031 100%);
 }
 
 .site-header-title h1 {
@@ -84,6 +84,7 @@ $on-laptop:        800px;
 
 .site-header-title h2 {
     position: relative;
+    font-size: 24px;
 }
 
 .site-footer {
@@ -111,15 +112,163 @@ $on-laptop:        800px;
     margin: 0 10px;
     color: #fff;
     text-decoration: none;
+    position: relative;
 }
+
+.socials li a:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    -ms-transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+    transition: all .2s ease-in-out;
+}
+
+.socials li a:hover:before {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.socials li a span:before {
+    transition: all .2s ease-out 0s;
+}
+
+.socials li a:hover span:before {
+    -ms-transform: scale(0.80, 0.80);
+    -webkit-transform: scale(0.80, 0.80);
+    transform: scale(0.80, 0.80);
+}
+
 
 .socials li a:hover {
-    color: #A1C3BD;
+    color: #fff;
 }
 
+.home-content h2 {
+    position: relative;
+    margin-top: 30px;
+}
 
+.home-content h2:first-child {
+    margin-top: 0;
+}
 
+.home-content p {
+    margin: 0;
+}
 
+.home-content h2 .home-content-icon {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    color: #2552A8;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
 
+.home-content h2 .home-content-icon canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-content h2 .home-content-icon span {
+    position: relative;
+    top: 2px;
+    left: 6px;
+    z-index: 2;
+}
+
+.home-content h2,
+.home-content p {
+    padding-left: 60px;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list li {
+    padding: 0;
+}
+
+.footer-list span[class^="icon"] {
+    vertical-align: middle;
+}
+
+.footer-list .icon-heart {
+    color: #C94B51;
+}
+
+.footer-list a {
+    color: #444;
+}
+
+.footer-list .name {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.footer-list .name h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-list .phone {
+    margin: 0;
+    padding-top: 0;
+}
+
+.footer-list .love {
+    padding-top: 30px;
+    font-size: 16px;
+}
+
+@media (max-width: 650px) {
+    .site-header-title h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 530px) {
+    .site-header-title h1 {
+        font-size: 40px;
+    }
+    
+    .about-content,
+    .home-content {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .site-header-title h1 {
+        line-height: 1.2;
+    }
+
+    .site-header-title h2 {
+        font-size: 20px;
+    }
+
+    .about-content,
+    .home-content {
+        padding: 20px;
+    }
+
+}
 
 

@@ -7,10 +7,8 @@
     var pattern = Trianglify({
       height: 300,
       width: window.innerWidth,
-      cell_size: 40,
-      // x_colors: ['YlGnBu', 'PuOr', 'Purples', 'Blues', 'PuRd', 'Spectral']
-      x_colors: 'YlGnBu',
-      y_colors: 'GnBu'
+      cell_size: 50,
+      x_colors: 'YlGnBu'
     });
 
     document.querySelector(".site-header").appendChild(pattern.canvas());
