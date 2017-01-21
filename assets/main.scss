@@ -48,7 +48,7 @@ $on-laptop:        800px;
 .site-header-title {
     position: relative;
     text-align: center;
-    z-index: 2;
+    z-index: 4;
     padding: 50px;
 }
 
@@ -56,7 +56,7 @@ $on-laptop:        800px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 .page-content {
@@ -69,12 +69,12 @@ $on-laptop:        800px;
 
 .about-content {
     padding: 50px;
-    background-color: #A1C3BD;
-    color: #fff;
-    background: #fdc46e;
-    background: -moz-linear-gradient(-45deg, #264b9f 0%, #082031 100%);
-    background: -webkit-linear-gradient(-45deg,  #264b9f 0%,#082031 100%);
-    background: linear-gradient(135deg, #264b9f 0%, #082031 100%);
+    background: #E2F0FF;
+}
+
+.specialties-content {
+    padding: 50px;
+    background: #E9F4FF;
 }
 
 .site-header-title h1 {
@@ -101,7 +101,7 @@ $on-laptop:        800px;
     bottom: 10px;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 .socials li {
@@ -118,12 +118,12 @@ $on-laptop:        800px;
 .socials li a:before {
     content: "";
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     position: absolute;
     top: -1px;
     left: -2px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     -ms-transform: scale(0, 0);
     -webkit-transform: scale(0, 0);
@@ -172,7 +172,7 @@ $on-laptop:        800px;
     width: 40px;
     height: 40px;
     color: #2552A8;
-    border: 1px solid #e8e8e8;
+    border: 2px solid #e8e8e8;
     border-radius: 5px;
 }
 
@@ -192,6 +192,22 @@ $on-laptop:        800px;
 .home-content h2,
 .home-content p {
     padding-left: 60px;
+}
+
+.page-content {
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 230px;
+}
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: none;
 }
 
 .footer-list {
@@ -248,8 +264,9 @@ $on-laptop:        800px;
     .site-header-title h1 {
         font-size: 40px;
     }
-    
+
     .about-content,
+    .specialties-content,
     .home-content {
         padding: 40px;
     }
@@ -265,6 +282,7 @@ $on-laptop:        800px;
     }
 
     .about-content,
+    .specialties-content,
     .home-content {
         padding: 20px;
     }
