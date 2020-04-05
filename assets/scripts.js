@@ -12,7 +12,9 @@
     });
 
     var elem = document.querySelector(".site-header canvas");
-    elem.parentNode.removeChild(elem);
+    if (elem != null) {
+      elem.parentNode.removeChild(elem);
+    }
     document.querySelector(".site-header").appendChild(pattern.canvas());
   }
   resizeCanvas();
