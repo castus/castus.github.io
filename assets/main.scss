@@ -167,26 +167,19 @@ $on-laptop:        800px;
 
 .home-content h2 .home-content-icon {
     position: absolute;
-    top: 2px;
+    top: 0;
     left: 0;
     width: 40px;
     height: 40px;
-    color: #2552A8;
+    color: #444;
     border: 2px solid #e8e8e8;
     border-radius: 5px;
+    text-align: center;
 }
 
-.home-content h2 .home-content-icon canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.home-content h2 .home-content-icon span {
+.home-content h2 .home-content-icon .fa {
     position: relative;
-    top: 2px;
-    left: 6px;
-    z-index: 2;
+    top: -2px;
 }
 
 .home-content h2,
