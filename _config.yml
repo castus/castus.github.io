@@ -18,7 +18,7 @@ surname: Romanowski
 title: Krzysztof Romanowski
 email: me@krzysztofromanowski.pl
 description: > # this means to ignore newlines until "baseurl:"
-  full stack iOS developer with very strong front-end skills
+  devops, developer productivity, frontend, iOS developer, engineering manager, 17 years in IT
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: castus
