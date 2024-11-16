@@ -18,10 +18,9 @@ surname: Romanowski
 title: Krzysztof Romanowski
 email: me@krzysztofromanowski.pl
 description: > # this means to ignore newlines until "baseurl:"
-  devops, developer productivity, frontend, iOS developer, engineering manager, 17 years in IT
+  devops, platform engineer, frontend developer, iOS developer, engineering manager, 18 years in IT
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: castus
+url: "https://krzysztofromanowski.pl"
 github_username:  castus
 github:
   - is_project_page: false
@@ -29,8 +28,7 @@ github:
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+  - vendor
